@@ -93,3 +93,13 @@ button {
     display: none;
     z-index: 999;
 }
+
+
+@media (max-width: 480px) {
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+    .popup-icons a{
+        padding: 8px 10px;
+    }
+}
