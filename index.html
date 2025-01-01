@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes</title>
+    <script src="https://kit.fontawesome.com/0a682b9dd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p id="quote">Click the button that will make your day better!</p>
+        <button onclick="generateQuote()">New Quote</button>
+        <button onclick="openSharePopup()">Share</button>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="sharePopup">
+        <h3>Send this quote via</h3>
+        <div class="popup-icons">
+            <a href="#" class="whatsapp" onclick="shareToWhatsApp()"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="linkedin" onclick="shareToLinkedIn()"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="X-twitter" onclick="shareToTwitter()"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
